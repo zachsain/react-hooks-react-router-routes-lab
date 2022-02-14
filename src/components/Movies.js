@@ -11,11 +11,13 @@ function Movies() {
              return (<div key={movie.time}> 
                       <h3>{movie.title}</h3>
                       <h4>Time: {movie.time}</h4>
+                      <ul>
                       {movie.genres.map(genre => {
-                        return (<ul key={genre.index}>
-                          <li>{genre}</li>
-                          </ul>)
+                        return (
+                          <li key={genre.index}>{genre}</li>
+                         )
                       })}
+                      </ul>
                      </div>)
            })}
          </div>

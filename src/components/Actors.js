@@ -11,9 +11,9 @@ function Actors() {
                   <h3>{actor.name}</h3>
                   {actor.movies.map(movie => {
                     return (
-                      <ul>
+                      <li>
                         {movie}
-                      </ul>
+                      </li>
                     )
                   })}
                 </div>
